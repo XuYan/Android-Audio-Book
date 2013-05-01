@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout 
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:background="#000000"
+  >
+
+  <WebView
+      android:id="@+id/dBook"
+      android:layout_width="fill_parent"
+      android:layout_height="435dip"/>
+  
+  <LinearLayout 
+      android:orientation="horizontal"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center|bottom"
+      >
+  		<Button 
+      		android:id="@+id/back_to_book_shelf"
+     		android:layout_width="105dp"
+      		android:layout_height="50dp"
+      		android:text="@string/back_to_book_shelf"
+      		android:textSize="6pt"/>
+  
+  		<Button 
+      		android:id="@+id/webforward"
+     		android:layout_width="105dp"
+      		android:layout_height="50dp"
+      		android:enabled="false"
+      		android:text="@string/webforward"/>
+  
+  		<Button
+      		android:id="@+id/webbackward"
+     		android:layout_width="105dp"
+      		android:layout_height="50dp"
+      		android:enabled="false"
+      		android:text="@string/webbackward"/>
+  </LinearLayout>
+  
+</LinearLayout>

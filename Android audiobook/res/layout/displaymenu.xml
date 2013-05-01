@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- This XML file defines the layout of DoubleMode.java-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:id="@+id/linearLayout">
+	<TextView android:id="@+id/explanation" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" />
+</LinearLayout>

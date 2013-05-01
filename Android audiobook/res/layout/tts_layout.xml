@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:gravity="center_horizontal"
+	android:id="@+id/linearLayout5">
+	
+	<ListView android:id="@+id/availabletxt" android:layout_width="fill_parent"
+	    android:layout_height="wrap_content" android:divider="@drawable/green"
+	    android:dividerHeight="1dp"/>"
+	<TextView android:id="@+id/currenttxt" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:lines="5" />
+	<LinearLayout android:orientation="horizontal"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:gravity="center_horizontal">
+		<Button android:id="@+id/speak" android:layout_width="70dp"
+			android:layout_height="47dp" android:text="@string/ispeak" 
+			android:enabled="false"/>
+		<Button android:id="@+id/stop" android:layout_width="70dp"
+			android:layout_height="47dp" android:text="@string/stop"
+			android:enabled="false"/>
+	</LinearLayout>
+</LinearLayout>

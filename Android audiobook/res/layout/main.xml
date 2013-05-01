@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:id="@+id/linearLayout4">
+  <TextView 
+      android:id="@+id/bookName"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:textSize="10pt"/>
+
+  <LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"    
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:orientation="horizontal"
+  >
+  <TextView
+  android:id="@+id/currentTime"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  />
+  <SeekBar android:id="@+id/seekBar"
+  android:layout_width="fill_parent"
+  android:layout_weight="1"
+  android:layout_height="wrap_content"
+  android:paddingLeft="10dip"  
+  android:paddingRight="10dip" 
+  style="?android:attr/progressBarStyleHorizontal"   
+  />
+  <TextView
+  android:id="@+id/durationTime"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  /> 
+  </LinearLayout>
+  
+
+  <LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/DtoT"
+  android:orientation="horizontal"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:layout_weight="1"
+  android:gravity="center|center_horizontal" 
+  >
+  <ImageButton
+  android:id="@+id/SwithchImage2"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:src="@drawable/switchimage2"
+  android:visibility="invisible"
+  >
+  </ImageButton>
+  <ScrollView 
+      android:id="@+id/ScrollView"
+      android:layout_width = "wrap_content"
+      android:layout_height = "wrap_content">
+  <LinearLayout 
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content">
+  <ImageView
+  android:id="@+id/ImageView"
+  android:text="Fairy Tale Diagram"
+  android:layout_width="300px"
+  android:layout_height="400px"
+  android:scaleType="fitCenter"
+  >  
+  </ImageView>
+  <TextView
+      android:id="@+id/TextView"
+      android:layout_width = "300px"
+      android:layout_height = "wrap_content"
+      android:textSize = "5pt"
+      android:visibility="gone">
+  </TextView>
+  </LinearLayout>
+  </ScrollView>
+  <ImageButton
+  android:id="@+id/SwithchImage"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:src="@drawable/switchimage">
+  </ImageButton>
+  </LinearLayout>
+
+      
+  <LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"   
+  android:orientation="horizontal"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:gravity="center|center_horizontal" 
+  >
+  <ImageButton
+  android:id="@+id/RewindButton"
+  android:layout_width="50dp"
+  android:layout_height="50dp"  
+  android:src="@drawable/rewind"/>
+  <ImageButton
+  android:id="@+id/StopImageButton" 
+  android:layout_height="50dp"  
+  android:layout_width="50dp"
+  android:src="@drawable/stop"/>  
+  <ImageButton
+  android:id="@+id/StartImageButton" 
+  android:layout_height="50dp"  
+  android:layout_width="50dp" 
+  android:src="@drawable/start"/>
+  <ImageButton
+  android:id="@+id/PauseImageButton" 
+  android:layout_height="50dp"  
+  android:layout_width="50dp" 
+  android:src="@drawable/pause"/>
+  <ImageButton
+  android:id="@+id/ForwardButton"
+  android:layout_width="50dp"
+  android:layout_height="50dp"  
+  android:src="@drawable/forward"/>  
+  </LinearLayout>
+  
+  <LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"   
+  android:orientation="horizontal"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:gravity="center|bottom">
+  <ImageButton
+  android:id="@+id/LastImageButton"
+  android:layout_width="50dp"
+  android:layout_height="50dp"  
+  android:src="@drawable/previous"/>
+  <ImageButton
+  android:id="@+id/upButton"
+  android:layout_width="50dp"
+  android:layout_height="50dp" 
+  android:src="@drawable/upbutton"
+  android:scaleType="fitCenter"/>
+  <ImageButton
+  android:id="@+id/downButton"
+  android:layout_width="50dp"
+  android:layout_height="50dp" 
+  android:src="@drawable/downbutton"
+  android:scaleType="fitCenter"/>
+  <ImageButton
+  android:id="@+id/muteButton"
+  android:layout_width="50dp"
+  android:layout_height="50dp" 
+  android:src="@drawable/mutebutton"
+  android:scaleType="fitCenter"/>
+  <ImageButton
+  android:id="@+id/NextImageButton"
+  android:layout_width="50dp"
+  android:layout_height="50dp" 
+  android:src="@drawable/next"/>
+  <Button
+  android:id="@+id/sleep"
+  android:layout_width="60dp"
+  android:layout_height="50dp"
+  android:text="@string/sleep"/>
+  </LinearLayout>
+  
+</LinearLayout>

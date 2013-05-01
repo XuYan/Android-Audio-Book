@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.yarin.Android.MainUI"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="8" />
+    <!-- 授权访问互联网 -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <!-- 在SD卡中创建与删除文件权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" /> 
+    <!-- 向SD卡写入数据权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+        
+        <activity android:name=".ProgramInitialization">
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:label="Mode Selection Interface"
+            android:name=".DoubleMode">
+        </activity>
+        
+        <activity
+            android:label="TTS Interface"
+            android:name=".TTS" >
+        </activity>
+        
+        <activity
+            android:label="@string/app_name"
+            android:name=".InitialUI" >
+        </activity>
+        
+        <activity
+            android:name=".MainUIActivity"
+            android:label="Main play Interface">
+        </activity>
+
+	    <activity
+            android:name=".bookShelf"
+            android:label="View Book Shelf">
+        </activity>
+        
+	    <activity
+            android:name=".webPage"
+            android:label="View Web Page">
+        </activity> 
+
+    </application>
+    
+</manifest>

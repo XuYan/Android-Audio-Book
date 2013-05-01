@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, MainUIActivity!</string>
+    <string name="app_name">Audio Book Player</string>
+    
+    <string name="load">正在载入</string>
+    
+    <string name="ispeak">I Speak</string>
+    <string name="stop">Stop</string>
+    
+    <string name="back_to_book_shelf">Quit</string>
+    <string name="webbackward">Go Backward</string>
+    <string name="webforward">Go Forward</string>
+    
+    <string name="before_hint">Save as:</string>
+    <string name="hint">Input the name of the audio book:</string>
+    
+    <string name="sleep">sleep</string>
+    <string name="hour_prompt">hour_options</string>
+    <string name="minute_prompt">minute_options</string>
+    
+    <string name="deleteItem">delete</string>
+</resources>

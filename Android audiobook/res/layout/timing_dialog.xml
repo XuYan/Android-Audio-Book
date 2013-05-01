@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:orientation="vertical"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent">
+	    
+    <ImageView 
+	    android:layout_width="80dp"
+	    android:layout_height="80dp"
+	    android:id="@+id/timingIcon"
+	    android:src="@drawable/timing"
+		android:layout_marginTop="5dip"
+	    android:scaleType="fitCenter"/>
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/timingIcon"
+        android:id="@+id/hours"
+        android:text="Hours:     "
+        android:textSize="15pt"/>
+    <Spinner 
+        android:id="@+id/inputHours"
+        android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_toRightOf="@id/hours"
+		android:layout_alignTop="@id/hours"
+	    android:layout_centerHorizontal="true"
+	    android:prompt="@string/hour_prompt"/>
+	
+    <Spinner 
+	    android:id="@+id/inputMinutes"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+		android:layout_below="@id/inputHours"
+		android:layout_alignLeft="@id/inputHours"
+		android:layout_centerHorizontal="true"
+		android:prompt="@string/minute_prompt"/>
+    
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/minutes" 
+        android:layout_below="@id/hours"
+        android:layout_alignLeft="@id/hours"
+        android:layout_alignTop="@id/inputMinutes"
+        android:textSize="15pt"
+        android:text="Minutes: "/>
+
+	
+	<Button
+	    android:layout_width="80dp"
+	    android:layout_height="40dp"
+	    android:text="Confirm"
+	    android:layout_below="@id/inputMinutes"
+	    android:id="@+id/launching"
+	    android:layout_marginLeft="80dp"/>
+	
+	<Button
+	    android:layout_width="80dp"
+	    android:layout_height="40dp"
+	    android:text="Cancel"
+	    android:layout_toRightOf="@id/launching"
+		android:layout_alignBottom="@id/launching"
+		android:id="@+id/cancel"/>
+        
+</RelativeLayout>
